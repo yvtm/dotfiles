@@ -13,7 +13,7 @@
     ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
+  #boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub.enable = true;
   boot.loader.grub.devices = [ "nodev" ];
@@ -179,6 +179,7 @@ hardware.uinput.enable = true;
 users.groups.uinput.members = [ "admin" ];
 users.groups.input.members = [ "admin" ];
 
+programs.partition-manager.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
