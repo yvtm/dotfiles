@@ -215,6 +215,8 @@ pkgs.vlc
 pkgs.qbittorrent-enhanced
 pkgs.qimgv
 pkgs.quickemu
+pkgs.os-prober
+pkgs.lshw-gui
 ];
 
 xdg.menus.enable = true;
