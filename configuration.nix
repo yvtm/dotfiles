@@ -220,6 +220,15 @@ pkgs.os-prober
 pkgs.lshw-gui
 htop
 waypaper
+hyprpanel
+#Hyprpanel
+meson
+ags
+gjs
+ninja
+
+pywal
+nodejs_23
 ];
 
 xdg.portal.enable = true;
