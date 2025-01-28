@@ -141,6 +141,7 @@ virtualisation.spiceUSBRedirection.enable=true;
   programs.firefox.enable = true;
 programs.hyprland.enable = true;
 programs.zsh.enable = true;
+programs.thunar.enable = true;
 programs.steam = {
 	enable = true;
 	package = pkgs.steam.override{
@@ -219,7 +220,16 @@ pkgs.os-prober
 pkgs.lshw-gui
 ];
 
+xdg.portal.enable = true;
 xdg.menus.enable = true;
+
+xdg.mime = {
+	enable = true;
+	defaultApplications = {
+		"image/png" = [ "qimgv.desktop" ];
+	};
+};
+
 
 virtualisation.virtualbox.host.enable = true;
 
