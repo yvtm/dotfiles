@@ -196,8 +196,8 @@ pkgs.dunst
 pkgs.networkmanagerapplet
 pkgs.pavucontrol
 pkgs.hyprpaper
-pkgs.hyprwall
-pkgs.swww
+#pkgs.hyprwall
+#pkgs.swww
 pkgs.mangohud
 pkgs.vscode
 pkgs.spotify
@@ -218,6 +218,8 @@ pkgs.qimgv
 pkgs.quickemu
 pkgs.os-prober
 pkgs.lshw-gui
+htop
+waypaper
 ];
 
 xdg.portal.enable = true;
