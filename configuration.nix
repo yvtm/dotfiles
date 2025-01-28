@@ -197,7 +197,7 @@ pkgs.networkmanagerapplet
 pkgs.pavucontrol
 pkgs.hyprpaper
 #pkgs.hyprwall
-#pkgs.swww
+pkgs.swww
 pkgs.mangohud
 pkgs.vscode
 pkgs.spotify
