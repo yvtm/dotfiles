@@ -63,6 +63,17 @@ services.resolved = {
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
+fonts = {
+	enableDefaultPackages = true;
+	packages = with pkgs; [
+		unifont
+	];
+	fontconfig = {
+		defaultFonts = {
+			sansSerif = [ "unifont" ];
+		};
+	};
+};
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
@@ -196,7 +207,7 @@ pkgs.dunst
 pkgs.networkmanagerapplet
 pkgs.pavucontrol
 pkgs.hyprpaper
-#pkgs.hyprwall
+pkgs.hyprwall
 pkgs.swww
 pkgs.mangohud
 pkgs.vscode
