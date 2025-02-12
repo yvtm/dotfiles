@@ -99,6 +99,7 @@ xdg.mimeApps = {
 		"image/jpg" = "qimgv.desktop";
 		"image/jpeg" = "qimgv.desktop";
 		"video/mkv" = "vlc.desktop";
+		"image/webp" = "qimgv.desktop";
 	};
 };
 
