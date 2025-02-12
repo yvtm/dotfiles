@@ -75,10 +75,10 @@ home.sessionVariables = {
 	programs.zsh = {
 	enable = true;
 	shellAliases = {
-		nixc = "sudo nvim ~/.dotfiles/configuration.nix";
-		homec = "sudo nvim ~/.dotfiles/home.nix";
-		flakec = "sudo nvim ~/.dotfiles/flake.nix";
-		hyprc = "sudo nvim ~/.config/hypr/hyprland.conf";
+		nixc = "nvim ~/.dotfiles/configuration.nix";
+		homec = "nvim ~/.dotfiles/home.nix";
+		flakec = "nvim ~/.dotfiles/flake.nix";
+		hyprc = "nvim ~/.config/hypr/hyprland.conf";
 		rebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles; rm .cache/tofi-drun";
 		homebuild = "home-manager switch --flake ~/.dotfiles";
 	};
