@@ -1,4 +1,4 @@
-# Edit this configuration file to define what should be installed on
+#Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
@@ -67,10 +67,13 @@ fonts = {
 	enableDefaultPackages = true;
 	packages = with pkgs; [
 		unifont
+		vt323
+		tamsyn
+		jetbrains-mono
 	];
 	fontconfig = {
 		defaultFonts = {
-			sansSerif = [ "unifont" ];
+			sansSerif = [ "tamsyn" ];
 		};
 	};
 };
@@ -237,9 +240,12 @@ meson
 ags
 gjs
 ninja
-
+vesktop
 pywal
 nodejs_23
+muse-sounds-manager
+gcc
+clang
 ];
 
 xdg.portal.enable = true;
@@ -252,6 +258,10 @@ xdg.mime = {
 	};
 };
 
+programs.appimage = {
+	enable = true;
+	binfmt = true;
+};
 
 virtualisation.virtualbox.host.enable = true;
 
