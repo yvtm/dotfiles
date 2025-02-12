@@ -246,6 +246,8 @@ nodejs_23
 muse-sounds-manager
 gcc
 clang
+libclang
+lua-language-server
 ];
 
 xdg.portal.enable = true;
