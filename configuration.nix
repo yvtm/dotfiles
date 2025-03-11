@@ -102,10 +102,7 @@ services.xremap = {
 modmap:
   - name: main remaps
     remap:
-      capslock:
-        held: leftctrl
-        alone: backslash 
-        alone_timeout_millis: 150
+      capslock: leftctrl 
       slash:
         held: backslash
         alone: slash
@@ -233,6 +230,7 @@ pkgs.quickemu
 pkgs.os-prober
 pkgs.lshw-gui
 htop
+unzip
 waypaper
 hyprpanel
 #Hyprpanel
@@ -248,6 +246,7 @@ gcc
 clang
 libclang
 lua-language-server
+speedtest-cli
 ];
 
 xdg.portal.enable = true;
