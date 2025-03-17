@@ -246,7 +246,9 @@ gcc
 clang
 libclang
 lua-language-server
+unrar
 speedtest-cli
+desktop-file-utils
 ];
 
 xdg.portal.enable = true;
