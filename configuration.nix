@@ -235,6 +235,7 @@ waypaper
 hyprpanel
 #Hyprpanel
 meson
+waydroid
 ags
 gjs
 ninja
@@ -267,8 +268,10 @@ programs.appimage = {
 };
 
 virtualisation.virtualbox.host.enable = true;
-
-  # Some programs need SUID wrappers, can be configured further or are
+virtualisation.waydroid.enable = true;
+virtualisation.lxd.enable = true; 
+  #Some programs need SUID wrappers,
+  # can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
   # programs.gnupg.agent = {
