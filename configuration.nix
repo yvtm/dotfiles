@@ -96,7 +96,7 @@ fonts = {
   console.keyMap = "us";
 
 services.xremap = {
-	withHypr = true;
+	withHypr = false;
 	userName = "admin";
 	yamlConfig = ''
 modmap:
@@ -243,6 +243,7 @@ vesktop
 pywal
 nodejs_23
 muse-sounds-manager
+gnumake
 gcc
 clang
 libclang
